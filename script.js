@@ -16,37 +16,33 @@ const p3 = document.getElementById("p3");
 const p4 = document.getElementById("p4");
 const p5 = document.getElementById("p5");
 
-id1.addEventListener("click", () => getNumber(p1));
-id2.addEventListener("click", () => getNumber(p2));
-id3.addEventListener("click", () => getNumber(p3));
-id4.addEventListener("click", () => getNumber(p4));
-id5.addEventListener("click", () => getNumber(p5));
-
 let q = 0;
 let w = 0;
 let e = 0;
 let r = 0;
 let t = 0;
 
-function getNumber(p) {
-    if (p === p1) {
-        q += 1;
-        p.innerText = q;
-    } 
-    if (p === p2) {
-        w += 1; 
-        p.innerText = w;
-    }  
-    if (p === p3) {
-        e += 1;
-        p.innerText = e;
-    }
-    if (p === p4) {
-        r += 1;
-        p.innerText = r;
-    }
-    if (p === p5) {
-        t += 1;
-        p.innerText = t;
-    }
-};
+id1.addEventListener("click", () => {
+    q += 1;
+    p1.innerText = q;
+});
+
+id2.addEventListener("click", () => {
+    w += 1;
+    p2.innerText = w;
+});
+
+id3.addEventListener("click", () => {
+    e += 1;
+    p3.innerText = e;
+});
+
+id4.addEventListener("click", () => {
+    r += 1;
+    p4.innerText = r;
+});
+
+id5.addEventListener("click", () => {
+    t += 1;
+    p5.innerText = t;
+});
